@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import Header from './component/main_component/Header'
 import { Outlet } from 'react-router-dom'
-import Footer from './component/main_component/Footer'
+
 
 function App() {
 
 
   return (
     <>
+     <div className="flex h-screen">
       <Header/>
-      <div>
+      <main className="bg-black text-white flex-1 overflow-y-auto p-6">
         <Outlet/>
+      </main>
+      {/* <Footer/> */}
       </div>
-      <Footer/>
     </>
   )
 }
