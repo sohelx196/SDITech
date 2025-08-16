@@ -5,6 +5,7 @@ import LostAndFound from "./component/LostAndFound";
 import Signup from "./component/main_component/SignUp";
 import Login from "./component/main_component/Login";
 import PageNotFound from "./component/main_component/PageNotFound";
+import Events from "./component/Events";
 
  const router = createBrowserRouter([
     
@@ -20,6 +21,11 @@ import PageNotFound from "./component/main_component/PageNotFound";
             path:"lost&found",
             element:<LostAndFound/>
         },
+        {
+            path:"events",
+            element:<Events/>
+        },
+     
       
     ]
 },
