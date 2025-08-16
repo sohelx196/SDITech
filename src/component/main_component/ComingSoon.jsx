@@ -1,7 +1,4 @@
 
-import { useEffect } from "react";
-
-
 
 function ComingSoon({ComingSoonImg,text1,text2}) {
 

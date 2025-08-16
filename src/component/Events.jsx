@@ -2,16 +2,16 @@ import React from 'react'
 import ComingSoon from './main_component/ComingSoon'
 import comingSoon from '../assets/logos/comingSoon.png'
 
-function LostAndFound() {
+function Events() {
   return (
     <div>
           <ComingSoon
             ComingSoonImg={comingSoon}
-            text1 = "Lost & Found Coming"
-            text2 = "Soon!"
+            text1 = "Events"
+            text2 = "Coming Soon!"
           />
     </div>
   )
 }
 
-export default LostAndFound
+export default Events
