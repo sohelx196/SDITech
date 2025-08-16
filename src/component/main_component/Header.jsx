@@ -11,7 +11,7 @@ function Header() {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="hidden lg:flex border-r rounded-r-lg border-gray-50 w-64 bg-black text-white shadow-lg flex-col p-4">
+      <aside className="hidden lg:flex border-r rounded-r-lg border-gray-700 w-64 bg-black text-white shadow-lg flex-col p-4">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8">
           <img
@@ -20,6 +20,7 @@ function Header() {
             className="hover:-translate-y-1 transition-transform duration-500 h-10 w-auto object-contain"
           />
         </div>
+
 
         {/* Navigation */}
         <nav className="flex-1">
@@ -86,8 +87,11 @@ function Header() {
         </div>
       </aside>
 
-      {/* Mobile Top Navbar */}
-      <header className="rounded-md lg:hidden fixed top-0 left-0 w-full bg-black text-white border-b border-gray-700 shadow-md flex justify-between items-center px-4 py-2 z-50">
+
+
+
+      {/* Mobile Top Navbar startss */}
+      <header className=" lg:hidden fixed top-0 left-0 w-full bg-black text-white border-b border-gray-700 shadow-md flex justify-between items-center px-4 py-2 z-50">
         {/* Logo */}
         <img
           src={sditechLogo}
@@ -111,13 +115,17 @@ function Header() {
           </Link>
         </div>
       </header>
-      
+      {/* Mobile top nav endd */}
 
-      {/* Mobile Bottom Navbar */}
-      <nav className="lg:hidden fixed bottom-0 left-0 w-full bg-black text-white border-t border-gray-700 shadow-lg">
+
+
+
+
+      {/* Mobile Bottom Navbar starts */}
+      <nav className="rounded-full lg:hidden fixed bottom-0 left-0 w-full bg-black text-white border-t border-gray-700 shadow-lg">
         <ul className="flex justify-around items-center py-2">
           <li>
-            <NavLink
+            <NavLink  
               to="/"
               className={({ isActive }) =>
                 `flex flex-col items-center text-xs ${
@@ -139,7 +147,7 @@ function Header() {
               }
             >
               <img src={lostAndFound} alt="Lost & Found" className="h-6 w-10 mb-1" />
-              Lost
+              Lost & Found
             </NavLink>
           </li>
           <li>
@@ -176,12 +184,16 @@ function Header() {
                   alt="Profile"
                   className="filter invert object-contain h-3 w-3"
                 />
-              </div>
+              </div>    
               Profile
             </NavLink>
           </li>
         </ul>
       </nav>
+      {/* Mobile Bottom Navbar starts */}
+
+
+
     </>
   );
 }
