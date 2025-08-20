@@ -1,3 +1,3 @@
-SDITech is the first platform for collages where students , teacher and other can able to help the lost thing around or in campus things..
+SDITech is the first platform for collages where students , teacher and other can able to help the lost thing around or in campus..
 
 We are Coming soon...
